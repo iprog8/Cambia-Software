@@ -545,3 +545,102 @@ var appCopyrights = new Vue({
     methods: {
     }
 });
+
+
+var appGetStarted = new Vue({
+    el: '#dreams',
+    data: {
+        visible: true,
+        title: 'Dorintele tale',
+        subtitle: `In aceasta etapa noi iti vom trimite un chestionar destul de detaliat in care iti vom adresa 
+        un set considerabil de intrebari astfel incat noi sa putem intelege cu ce si cum te putem ajuta. 
+        Si bineinteles sa vedem daca te putem ajuta, pentru ca stim ca nu le stim pe toate. Dar avem alti 
+        colaboratori catre care va putem redirectiona. Setul de intrebari se concentreaza asupra. 
+            `,
+        linkStep1: 'dorinte.html',
+        linkStep2: 'identitatea-ta.html',
+        linkStep3: 'aspect-site.html',
+        linkStep4: 'finisaje.html',
+        steps: [
+            {
+                image: 'img/svg/cloud.svg',
+                title: 'Urgenta proiectului',
+                altImage: 'Dorintele tale referitoare la site',
+                text: 'Urgenta proiectului text to be done',
+                addRow: 0
+            },
+            {
+                image: 'img/svg/planet.svg',
+                title: 'Mesaj',
+                altImage: 'Care este mesajul care vrei sa ajunga la clientul tau?',
+                text: 'Care e mesajul care vrei sa ajunga la clientul tau',
+                addRow: 0
+            },
+            {
+                image: 'img/svg/paint-palette.svg',
+                title: 'Pregatirea de materiale',
+                altImage: 'Statusul in care esti cu pregatirea materialelor',
+                text: 'Statusul in care esti cu pregatirea materialelor',
+                addRow: 1
+            },
+            {
+                image: 'img/svg/design-tool.svg',
+                title: 'Detalierea pe pagini',
+                altImage: 'Ce pagini vrei sa contina site-ul tau si ce vrei sa fie pe fiecare pagina',
+                text: 'Ce pagini vrei sa contina site-ul tau si ce vrei sa fie pe fiecare pagina',
+                addRow: 0
+            },
+        ]
+    },
+    methods: {
+    }
+});
+
+var appVisualIdentity = new Vue({
+    el: '#visual-identity',
+    data: {
+        visible: true,
+        title: 'Dorintele tale',
+        subtitle: `In aceasta etapa noi iti vom trimite un chestionar destul de detaliat in care iti vom adresa 
+        un set considerabil de intrebari astfel incat noi sa putem intelege cu ce si cum te putem ajuta. 
+        Si bineinteles sa vedem daca te putem ajuta, pentru ca stim ca nu le stim pe toate. Dar avem alti 
+        colaboratori catre care va putem redirectiona. Setul de intrebari se concentreaza asupra. 
+            `,
+        linkStep1: 'dorinte.html',
+        linkStep2: 'identitatea-ta.html',
+        linkStep3: 'aspect-site.html',
+        linkStep4: 'finisaje.html',
+        steps: [
+            {
+                image: 'img/svg/cloud.svg',
+                title: 'Urgenta proiectului',
+                altImage: 'Dorintele tale referitoare la site',
+                text: 'Urgenta proiectului text to be done',
+                addRow: 0
+            },
+            {
+                image: 'img/svg/planet.svg',
+                title: 'Mesaj',
+                altImage: 'Care este mesajul care vrei sa ajunga la clientul tau?',
+                text: 'Care e mesajul care vrei sa ajunga la clientul tau',
+                addRow: 0
+            },
+            {
+                image: 'img/svg/paint-palette.svg',
+                title: 'Pregatirea de materiale',
+                altImage: 'Statusul in care esti cu pregatirea materialelor',
+                text: 'Statusul in care esti cu pregatirea materialelor',
+                addRow: 1
+            },
+            {
+                image: 'img/svg/design-tool.svg',
+                title: 'Detalierea pe pagini',
+                altImage: 'Ce pagini vrei sa contina site-ul tau si ce vrei sa fie pe fiecare pagina',
+                text: 'Ce pagini vrei sa contina site-ul tau si ce vrei sa fie pe fiecare pagina',
+                addRow: 0
+            },
+        ]
+    },
+    methods: {
+    }
+});
