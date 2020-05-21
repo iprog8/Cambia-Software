@@ -1,5 +1,5 @@
 {
-  "name": "Cambia-Software",
+  "name": "cambia-software",
   "version": "1.0.0",
   "description": "Cambia Software - demo pentru hosting gratuit pentru site-uri facute cu HTML, CSS &amp; JS",
   "main": "index.js",
@@ -18,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/iprog8/Cambia-Software/issues"
   },
-  "homepage": "https://github.com/iprog8/Cambia-Software#readme",
   "dependencies": {
     "gh-pages": "^2.2.0"
   }
