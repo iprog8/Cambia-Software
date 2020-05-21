@@ -1,0 +1,25 @@
+{
+  "name": "Cambia-Software",
+  "version": "1.0.0",
+  "description": "Cambia Software - demo pentru hosting gratuit pentru site-uri facute cu HTML, CSS &amp; JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iprog8/Cambia-Software.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://iprog8.github.io/Cambia-Software",
+  "bugs": {
+    "url": "https://github.com/iprog8/Cambia-Software/issues"
+  },
+  "homepage": "https://github.com/iprog8/Cambia-Software#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
