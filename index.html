@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ro-RO" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambia Software - Site-urile facute de noi iti schimba business-ul in bine</title>
+  <meta name="description"
+    content="Ai nevoie de un site care sa arate ca in 2020? Intra pe Cambia Software si cere gratuit o ora de consiliere.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Creare site &bull; Realizare site 2020">
+  <meta property="og:description"
+    content="Ai nevoie de un site care sa arate ca in 2020? Intra pe Cambia Software si cere gratuit o ora de consiliere.">
+  <meta property="og:locale" content="ro_RO" />
+  <meta property="og:updated_time" content="2020-04-04T08:10:16-07:00">
+  <meta property="og:url" content="#" />
+  <meta property="og:image" content="img/hero-img.png" />
+  <meta property="og:image:width" content="1008" />
+  <meta property="og:image:height" content="624" />
+  <meta property="og:image:alt" content="Creare site &bull; Realizare site 2020" />
+  <link rel="canonical" href="#">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+    rel="stylesheet">
+
+  <!-- Bootstrap css -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: eStartup
+    Theme URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <header id="header" class="header header-hide">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#body" class="scrollto"><span>{{name1}}</span> {{name2}}</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/Cambia software logo transparent.png" alt="" title="" width="150px" /></a> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#landingArea">{{home}}</a></li>
+          <li><a href="#get-started">{{howWorks}}</a></li>
+          <li><a href="#mobile-ready">{{mobileReady}}</a></li>
+          <li><a href="#features">{{features}}</a></li>
+          <li v-if="screenshotsVisibility"><a href="#screenshots">{{screenshots}}</a></li>
+          <li><a href="#team">{{team}}</a></li>
+          <li><a href="#pricing">{{pricing}}</a></li>
+          <li><a href="#blog">{{blog}}</a></li>
+          <li><a href="#contact">{{contact}}</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Landing Section
+  ============================-->
+  <section id="landingArea" class="wow fadeIn">
+    <div class="hero-container">
+      <h1>{{welcome}}</h1>
+      <h2>{{motto}}</h2>
+      <img src="img/hero-img.png" alt="Hero Imgs">
+      <a href="#get-started" class="btn-get-started scrollto">{{readMore}}</a>
+    </div>
+  </section><!-- #landingArea -->
+
+  <!--==========================
+    Get Started Section
+  ============================-->
+  <section id="get-started" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+
+        <h2>{{title}}</h2>
+        <p class="separator">{{subtitle}}</p>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-3" v-for="step in steps">
+          <div class="feature-block" :title="step.altImage">
+
+            <img :src="step.image" :alt="step.altImage" class="img-fluid">
+            <h4>{{step.title}}</h4>
+            <p>
+              {{step.text}}
+              <span v-if="step.addRow > 0">&nbsp;<br>&nbsp;</span>
+            </p>
+            <a :href="step.readMoreLink">{{step.readMore}}</a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!--==========================
+    Mobile ready Section
+  ============================-->
+  <section id="mobile-ready" class="about-us padd-section wow fadeInUp">
+    <div class="container" :title="alt">
+      <div class="row justify-content-center">
+
+        <div class="col-md-5 col-lg-3">
+          <img src="img/about-img.png" :alt="alt">
+        </div>
+
+        <div class="col-md-7 col-lg-5">
+          <div class="about-content">
+
+            <h2>{{title1}} <span>{{title2}}</span> {{title3}}</h2>
+            <p>{{description}}
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Features Section
+  ============================-->
+
+  <section id="features" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>{{title}}</h2>
+        <p class="separator">{{subtitle}}</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4" v-for="feature in features">
+          <div class="feature-block" :title="feature.alt">
+            <img :src="feature.image" :alt="feature.alt" class="img-fluid">
+            <h4>{{feature.title}}</h4>
+            <p>{{feature.text}}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Screenshots Section
+  ============================-->
+  <section v-if="visible" id="screenshots" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>{{title}}</h2>
+        <p class="separator">{{subtitle}}</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+
+        <div v-for="screenshot in screenshots">
+          <img :src="screenshot.image" :alt="screenshot.alt" :title="screenshot.alt">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--==========================
+    Video Section
+  ============================-->
+
+  <section v-if="visible" id="video" class="text-center wow fadeInUp">
+    <div class="overlay">
+      <div class="container-fluid container-full">
+
+        <div class="row">
+          <a href="#" class="js-modal-btn play-btn" data-video-id="s22ViV7tBKE"></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Team Section
+  ============================-->
+  <section v-if="visible" id="team" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+
+        <h2>{{title}}</h2>
+        <p class="separator">{{subtitle}}</p>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-6 col-md-4 col-lg-3" v-for="player in team">
+          <div class="team-block bottom">
+            <img :src="player.image" class="img-responsive" :alt="player.name" :title="player.name">
+            <div class="team-content">
+              <ul class="list-unstyled">
+                <li><a :href="player.facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a :href="player.twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a :href="player.linkedin"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+              <span>{{player.title}}</span>
+              <h4>{{player.name}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--==========================
+    Testimonials Section
+  ============================-->
+
+  <section v-if="visible" id="testimonials" class="padd-section text-center wow fadeInUp">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-md-8">
+
+          <div class="testimonials-content">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+              <div class="carousel-inner" role="listbox">
+
+                <div class="carousel-item  active">
+                  <div class="top-top">
+
+                    <h2>Our Users Speack volumes us</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type
+                      specimen book. It has survived not only five centuries.</p>
+                    <h4>Kimberly Tran<span>manager</span></h4>
+
+                  </div>
+                </div>
+
+                <div class="carousel-item ">
+                  <div class="top-top">
+
+                    <h2>Our Users Speack volumes us</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type
+                      specimen book. It has survived not only five centuries.</p>
+                    <h4>Henderson<span>manager</span></h4>
+
+                  </div>
+                </div>
+
+                <div class="carousel-item ">
+                  <div class="top-top">
+
+                    <h2>Our Users Speack volumes us</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type
+                      specimen book. It has survived not only five centuries.</p>
+                    <h4>David Spark<span>manager</span></h4>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="btm-btm">
+
+                <ul class="list-unstyled carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Pricing Table Section
+  ============================-->
+  <section v-if="visible" id="pricing" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+
+        <h2>{{title}}</h2>
+        <p class="separator">{{subtitle}}</p>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4" v-for="price in prices">
+          <div class="block-pricing">
+            <div class="table">
+              <h4>{{price.title}}</h4>
+              <h2>{{price.pricing}}</h2>
+              <ul class="list-unstyled">
+                <li v-for="d in price.deliverables"><b>{{d.text1}}</b> {{d.text2}}
+                  <br v-if="d.addRow">
+                  <br v-if="d.addRow">
+                </li>
+              </ul>
+              <div class="table_btn">
+                <a href="#" class="btn"><i class="fa fa-shopping-cart"></i> {{price.buyNow}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Blog Section
+  ============================-->
+  <section v-if="visible" id="blog" class="padd-section wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+
+        <h2>{{title}}</h2>
+        <p class="separator">{{subtitle}}</p>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4" v-for="article in articles">
+          <div class="block-blog text-left" :title="article.alt">
+            <a href="#"><img :src="article.image" :alt="article.alt"></a>
+            <div class="content-blog">
+              <h4><a :href="article.link">{{article.title}}</a></h4>
+              <span>{{article.data}}</span>
+              <a class="pull-right readmore" :href="article.link">{{article.readMore}}</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Newsletter Section
+  ============================-->
+  <section v-if="visible" id="newsletter" class="newsletter text-center wow fadeInUp">
+    <div class="overlay padd-section">
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-md-9 col-lg-6">
+            <form class="form-inline" method="POST" action="#">
+
+              <input type="email" class="form-control " placeholder="Email Adress" name="email">
+              <button type="submit" class="btn btn-default"><i class="fa fa-location-arrow"></i>Subscribe</button>
+
+            </form>
+
+          </div>
+        </div>
+
+        <ul class="list-unstyled">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Contact Section
+  ============================-->
+  <section v-if="visible" id="contact" class="padd-section wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>{{title}}</h2>
+        <p class="separator">{{subtitle}}</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-lg-3 col-md-4">
+
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>{{city}}<br>{{country}}</p>
+            </div>
+
+            <div class="email">
+              <i class="fa fa-envelope"></i>
+              <p>{{email}}</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>{{phone}}</p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          </div>
+
+        </div>
+
+        <div class="col-lg-5 col-md-8">
+          <div class="form">
+            <div id="sendmessage">{{confirm}}</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="numele tau"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="email" data-rule="email"
+                  data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="subiect"
+                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                  data-msg="Please write something for us" placeholder="mesaj"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit">Trimite</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- #contact -->
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer class="footer">
+    <div v-if="visible" id="footer" class="container">
+      <div class="row">
+
+        <div class="col-md-12 col-lg-4">
+          <div class="footer-logo">
+
+            <a class="navbar-brand" href="#">{{title}}</a>
+            <p>{{subtitle}}</p>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="list-menu">
+
+            <h4>Abou Us</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Features item</a></li>
+              <li><a href="#">Live streaming</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="list-menu">
+
+            <h4>Support</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Editor help</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div v-if="visible" id="copyrights" class="copyrights">
+      <div class="container">
+        <p>&copy; {{title}}</p>
+        <div class="credits">
+          <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eStartup
+          -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/modal-video/js/modal-video.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- script necesar pentru aplicatiile Vue Js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <!-- script necesar pentru codul custom de VueJS -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
